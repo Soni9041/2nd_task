@@ -1,0 +1,36 @@
+//  PIPES
+$ wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
+$ head -3 harry.txt
+$ tail -10 harry.txt
+$ grep -c "Harry" harry.txt
+$ grep -c "Ron" harry.txt
+$ grep -c "Hermione" harry.txt
+$ grep -c "dumbledore" harry.txt
+$ sed -en 100,200p harry.txt
+$ sort -u harry.txt | wc -l
+
+
+//processes, ports
+
+$ ps -o pid
+$ ps -o ppid
+$ ps -eo %cpu | head -3
+$ ps -eo %mem | head -3
+$ python -m SimpleHTTPServer 8000
+$ python -m SimpleHTTPServer 90
+$ netstat -at
+$ netstat -a8u
+$ lsof -i :80
+
+// managing software
+
+$ sudo apt-get install htop
+$ sudo apt-get install vim
+$ sudo apt-get install nginx
+$ sudo apt-get --purge remove nginx
+
+//Misc
+
+$ hostname -I
+$ nslookup google.com
+$ ping -c 192.168.2.22
